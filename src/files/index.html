@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatherify</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="w-full h-screen flex items-center justify-center flex-col">
+      <div
+        class="searchbox mb-10 justify-center items-center flex flex-col pb-9"
+      >
+        <form action="">
+          <input
+            type="search"
+            name="searchbox"
+            id="searchbox"
+            placeholder="Search By City Name"
+            class="px-6 h-20 w-full font-mono rounded-2xl text-2xl outline-none capitalize text-black"
+          />
+        </form>
+        <div
+          class="city mt-11 font-bold font-mono pt-1 text-center text-3xl"
+        ></div>
+      </div>
+      <div class="weather flex items-center gap-2">
+        <div class="imgWeather"></div>
+        <div class="value font-semibold text-2xl capitalize">
+          <h2 class="feelsLike hidden">Sunny</h2>
+        </div>
+      </div>
+      <div class="temp text-6xl mt-10 font-bold text-center hidden">
+        <h1>20&deg;c</h1>
+      </div>
+      <div class="additional flex items-center justify-center gap-10 mt-9">
+        <div
+          class="wind shadow-2xl p-8 bg-zinc-00 rounded-xl bg-zinc-300 hover:bg-zinc-400"
+        >
+          <div class="imgEle">
+            <img
+              src="../../assets/images/weather_icons/wind.png"
+              alt=""
+              class="h-16"
+            />
+          </div>
+          <div class="content text-center py-6 text-black font-bold">
+            <h2 class="windtxt text-xl hidden"></h2>
+            <h2 class="text-3xl py-5">Wind</h2>
+          </div>
+        </div>
+        <div
+          class="humidity shadow-2xl p-8 bg-zinc-00 rounded-xl bg-zinc-300 hover:bg-zinc-400"
+        >
+          <div class="imgEle">
+            <img
+              src="../../assets/images/weather_icons/humidity.png"
+              alt=""
+              class="h-16"
+            />
+          </div>
+          <div class="content text-center py-6 text-black font-bold">
+            <h2 class="text-xl humiditytxt hidden"></h2>
+            <h2 class="text-3xl py-5">Humidity</h2>
+          </div>
+        </div>
+        <div
+          class="visibility shadow-2xl p-8 bg-zinc-00 rounded-xl bg-zinc-300 hover:bg-zinc-400"
+        >
+          <div class="imgEle">
+            <img
+              src="../../assets/images/weather_icons/visibility.png"
+              alt=""
+              class="h-16"
+            />
+          </div>
+          <div class="content text-center py-6 text-black font-bold">
+            <h2 class="text-xl visibilitytxt hidden"></h2>
+            <h2 class="text-3xl py-5">Visibility</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
