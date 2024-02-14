@@ -34,7 +34,7 @@ const getWeather = async (cityName) => {
   const date = new Date();
   city.innerHTML = `
   <h1 class="cityName">${data.name}</h1>
-  <h2 class="date h-auto w-full rounded-md p-2">${date.toUTCString()}</h2>
+  <h2 class="date h-auto w-full rounded-md p-2">${date.toDateString()}</h2>
   `;
 };
 
@@ -51,9 +51,9 @@ const showWeather = (data) => {
   wind.classList.remove("hidden");
   wind.textContent = data.wind.speed;
   humidity.classList.remove("hidden");
-  humidity.textContent = data.main.humidity;
+  humidity.textContent = data.main.humidity + "%";
   visibility.classList.remove("hidden");
-  visibility.textContent = data.visibility / 1000;
+  visibility.textContent = data.visibility / 1000 + "Km/h";
   feelsLike.classList.remove("hidden");
 };
 form.addEventListener("submit", (e) => {

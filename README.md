@@ -4,7 +4,7 @@ This is a single page weather application that allows users to search for curren
 
 ## Tech Stack
 
-**Thunder Client:** HTML, CSS, JavaScript, API
+HTML, CSS, JavaScript, API
 
 ## Features
 
